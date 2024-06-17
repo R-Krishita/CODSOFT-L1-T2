@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    height: 130px;
+    width: 100%;
+}
+ul{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: 287px;
+
+}
+ul li{
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+    color: white;
+}
+.parent1{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(240, 147, 81, 1);
+    position: absolute;
+
+}
+.parent2{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(228, 141, 54, 0.83);
+    position: absolute;
+    top: 30px;
+}
+.parent3{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(240, 147, 81, 0.841);
+    position: absolute;
+    top: 30px;
+}
+.parent4{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(243, 194, 104);
+    position: absolute;
+    top: 30px;
+}
+.parent5{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(246, 224, 110, 0.69);
+    position: absolute;
+    top: 30px;
+}
+.navlogo{
+    width: 200px;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    bottom: 130px;
+    left: 20px;
+}
