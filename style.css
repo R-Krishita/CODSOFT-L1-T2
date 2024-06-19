@@ -3,11 +3,14 @@
     padding: 0px;
 }
 
+
+/* navbar */
 nav{
     position: sticky;
     top: 0px;
     height: 130px;
     width: 100%;
+    z-index: 1;
 }
 ul{
     margin: 20px;
@@ -21,9 +24,13 @@ ul{
 }
 ul li{
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 10px;
     list-style: none;
     color: white;
+}
+ul li:hover{
+    background-color: rgb(181, 101, 43);
 }
 .parent1{
     margin: 0px;
@@ -77,4 +84,169 @@ ul li{
     padding: 10px;
     bottom: 130px;
     left: 20px;
+}
+
+
+/* popupform */
+
+.btn-open-popup {  
+    padding: 10px;
+    background-color: rgb(240, 123, 40); 
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.overlay-container { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.6); 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+} 
+
+.popup-box { 
+    background: #fff; 
+    padding: 24px; 
+    border-radius: 12px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+    width: 320px; 
+    text-align: center; 
+    opacity: 0; 
+    transform: scale(0.8); 
+    animation: fadeInUp 0.5s ease-out forwards; 
+} 
+
+.form-container { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.form-label { 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    color: #444; 
+    text-align: left; 
+} 
+
+.form-input { 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    width: 100%; 
+    box-sizing: border-box; 
+} 
+
+.btn-submit { 
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+
+.btn-submit { 
+    background-color: green; 
+    color: #fff; 
+}  
+
+.btn-submit:hover:hover { 
+    background-color: #4caf50; 
+} 
+
+/* Keyframes for fadeInUp animation */ 
+@keyframes fadeInUp { 
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+/* Animation for popup */ 
+.overlay-container.show { 
+    display: flex; 
+    opacity: 1; 
+}
+
+.container{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerh1{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+.containerh3{
+    font-size: 20px;
+    position: relative;
+}
+.containerh5{
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top: 30px;
+}
+.imageimg{
+    width: 400px;
+    height: 400px;
+}
+.conth3{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+.horizontaline{
+    position: relative;
+    top: 120px;
+}
+
+/* aboutsection */
+.container2{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 150px;  
+}
+.container2h1{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(245, 201, 115, 1);
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.container3{
+    margin: 50px;
+    padding: 50px;
+    /* background-color: brown; */
+    width: 1575px;
+    position: relative;
+    top: 160px;
+    text-align: justify;
+}
+p{
+    font-size: 25px;
 }

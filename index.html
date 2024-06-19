@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- navbar -->
     <nav>
         <div class="parent1">
             <div class="parent2">
@@ -20,10 +21,10 @@
                             </a>
                                 <ul>
                                     <li><a class="nav-link active" aria-current="page" href="index.html"><strong>Home</strong></a></li>
-                                    <li><a class="nav-link active" aria-current="page" href="aboutme.html"><strong>About </strong></a></li>
-                                    <li><a class="nav-link active" aria-current="page" href="contact.html"><strong>Contact</strong></a></li>
-                                    <li><button>Log In</button></li>
-                                    <img src="icons/user.png" alt="png" width="50px" height="50px">
+                                    <li><a class="nav-link active" aria-current="page" href="#aboutme"><strong>About </strong></a></li>
+                                    <li><a class="nav-link active" aria-current="page" href="#contact"><strong>Contact</strong></a></li>
+                                    <li><button type="button" class="btn-open-popup" onclick="togglePopup()">Subscribe</button></li>
+                                    <li><img src="icons/user.png" alt="png" width="50px" height="50px" onclick="togglePopup()"></li>
                                 </ul>
                         </div>
                     </div>
@@ -31,5 +32,52 @@
             </div>
         </div>
     </nav>
+
+    <!-- popup form -->
+    <div id="popupOverlay" class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2>Subscribe</h2> 
+            <form class="form-container"> 
+                <label class="form-label" for="name">Username:</label> 
+                <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required> 
+                <label class="form-label" for="email">Email:</label> 
+                <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
+                <button class="btn-submit" type="submit">Submit</button> 
+            </form> 
+        </div> 
+    </div>
+
+    <div class="container">
+        <div class="child">
+
+            <h1 class="containerh1">Attitude is Everything</h1>
+            <h3 class="containerh3">Change Your Attitude... Change Your Life!</h3>
+            <h5 class="containerh5">By Jeff Keller</h5>
+            <h3 class="conth3">If you want to be successful, <br>you must be willing to be uncomfortable</h3>
+        </div>
+        <div class="img">
+            <img src="icons/Attitude-is-Everything-English.png" alt="book cover page" class="imageimg">
+        </div>
+    </div>
+
+    <!-- about the book -->
+    <div class="container2">
+        <h1 class="container2h1">About The Book</h1>
+    </div>
+    <div class="container3">
+        <p>Attitude is Everything is a transformative book that provides actionable insights into developing a positive mindset. The central theme of the book is empowering: <strong>you have control over your attitude and by changing your attitude, you can change your life.</strong></p>
+        <p>The book focuses on structured approach that is the book is divided into three main sections: <strong>Think</strong>, <strong>Speak</strong>, and <strong>Act</strong>, which makes it easy to navigate and find specific advice when needed.</p>
+        <p>Keller’s book is a comprehensive guide making it an invaluable resource for anyone looking to improve their life. It is written in a meticulous way which makes it easier to refer back to specific topics. The lessons and strategies in the book are designed to create lasting change, helping you to develop a <strong>positive attitude</strong> that will benefit you for years to come.</p>
+    </div>
+
+
+    
+    <!-- JS for popup form -->
+    <script> 
+        function togglePopup() { 
+            const overlay = document.getElementById('popupOverlay'); 
+            overlay.classList.toggle('show'); 
+        } 
+    </script>
 </body>
 </html>
