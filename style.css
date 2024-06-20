@@ -5,6 +5,7 @@
 
 
 /* navbar */
+
 nav{
     position: sticky;
     top: 0px;
@@ -32,6 +33,7 @@ ul li{
 ul li:hover{
     background-color: rgb(181, 101, 43);
 }
+
 .parent1{
     margin: 0px;
     padding: 0px;
@@ -164,7 +166,9 @@ ul li:hover{
     background-color: #4caf50; 
 } 
 
+
 /* Keyframes for fadeInUp animation */ 
+
 @keyframes fadeInUp { 
     from { 
         opacity: 0; 
@@ -177,7 +181,9 @@ ul li:hover{
     } 
 } 
 
+
 /* Animation for popup */ 
+
 .overlay-container.show { 
     display: flex; 
     opacity: 1; 
@@ -224,7 +230,9 @@ ul li:hover{
     top: 120px;
 }
 
+
 /* aboutsection */
+
 .container2{
     margin: 0px;
     padding: 0px;
@@ -243,7 +251,6 @@ ul li:hover{
 .container3{
     margin: 50px;
     padding: 50px;
-    /* background-color: brown; */
     width: 1575px;
     position: relative;
     top: 160px;
@@ -251,7 +258,14 @@ ul li:hover{
 }
 p{
     font-size: 25px;
+    width: 100%;
+    position: relative;
+
 }
+
+
+/* table of contents */
+
 .container4{
     margin: 50px;
     padding: 50px;
@@ -289,15 +303,66 @@ p{
 }
 .container6{
     margin: 10px;
-    width: 600px;
+    width: 700px;
     display: grid;
-    grid-template-columns: 200px 400px;
+    grid-template-columns: 200px 500px;
     position: relative;
     left: 453px;
     bottom: 60px;
 }
 .c6span{
     margin: 10px;
-    /* padding: 5px; */
     font-weight: 400;
+}
+
+
+/* paperback and kindle edition */
+
+.container7{
+    margin: 20px;
+    padding: 10px;
+    width: 600px;
+    font-weight: 400;
+    color: black;
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    left: 450px;
+}
+.c7button{
+    margin: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    background-color: rgba(245, 201, 115, 1);
+}
+span{
+    margin: 20px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/* contact us */
+
+.container8{
+    margin: 0px;
+    padding: 10px;
+    background-color: rgba(244, 129, 64, 1);
+    color: white;
+    display: grid;
+    grid-template-columns: 900px 500px;
+
+}
+.child1{
+    margin: 20px;
+    padding: 10px;
+}
+.p8{
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
 }
