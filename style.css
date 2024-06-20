@@ -181,6 +181,7 @@ ul li:hover{
 .overlay-container.show { 
     display: flex; 
     opacity: 1; 
+    z-index: 1;
 }
 
 .container{
@@ -237,6 +238,7 @@ ul li:hover{
     text-align: center;
     position: relative;
     top: 20px;
+    border: 2px solid black;
 }
 .container3{
     margin: 50px;
@@ -249,4 +251,53 @@ ul li:hover{
 }
 p{
     font-size: 25px;
+}
+.container4{
+    margin: 50px;
+    padding: 50px;
+    position: relative;
+    top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.c4span{
+    font-size: 25px;
+    margin: 60px;
+    position: relative;
+    bottom: 110px;
+    right: 40px;
+}
+.container5{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: 48px;
+}
+.c5span{
+    margin: 15px;
+    font-size: 25px;
+    position: relative;
+    left: 459px;
+    bottom: 52px;
+    font-weight: 400;
+}
+.container6{
+    margin: 10px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    position: relative;
+    left: 453px;
+    bottom: 60px;
+}
+.c6span{
+    margin: 10px;
+    /* padding: 5px; */
+    font-weight: 400;
 }
